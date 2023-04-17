@@ -1,0 +1,44 @@
+{
+  "name": "@lihaochen/kite",
+  "version": "0.0.0",
+  "description": "",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./easing": {
+      "types": "./dist/easing.d.ts",
+      "require": "./dist/easing.cjs",
+      "import": "./dist/easing.mjs"
+    },
+    "./func": {
+      "types": "./dist/func.d.ts",
+      "require": "./dist/func.cjs",
+      "import": "./dist/func.mjs"
+    },
+    "./species": {
+      "types": "./dist/species.d.ts",
+      "require": "./dist/species.cjs",
+      "import": "./dist/species.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@lihaochen/easing": "workspace:*",
+    "@lihaochen/func": "workspace:*",
+    "@lihaochen/species": "workspace:*"
+  }
+}

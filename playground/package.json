@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@lihaochen/kite": "workspace:*",
+    "@unocss/reset": "^0.51.4",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "unocss": "^0.51.4",
+    "vite": "^4.2.1"
+  }
+}

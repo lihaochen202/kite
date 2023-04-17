@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["DOM", "esnext"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "paths": {
+      "@lihaochen/kite": ["./packages/kite/src/index.ts"],
+      "@lihaochen/easing": ["./packages/easing/src/index.ts"],
+      "@lihaochen/func": ["./packages/func/src/index.ts"],
+      "@lihaochen/species": ["./packages/species/src/index.ts"]
+    }
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**"
+  ]
+}

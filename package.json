@@ -1,0 +1,19 @@
+{
+  "packageManager": "pnpm@8.2.0",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "rimraf packages/*/dist && pnpm -r --filter=./packages/* run build",
+    "stub": "pnpm -r --filter=./packages/* --parallel run stub",
+    "release": "bumpp -r"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.4",
+    "@types/node": "^18.15.11",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.38.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.0"
+  }
+}
