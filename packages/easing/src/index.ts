@@ -65,12 +65,13 @@ export function easingHandlerProvider(
   const tick = () => {
     const current = performance.now()
     const time = Math.min(current - start, duration)
+    hooks.update && hooks.update(easingFunc(time, from, diff, duration))
+
     if (time === duration) {
       hooks.finish && hooks.finish()
       return
     }
 
-    hooks.update && hooks.update(easingFunc(time, from, diff, duration))
     requestAnimationFrame(tick)
   }
   tick()
