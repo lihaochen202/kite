@@ -3,25 +3,31 @@ import {
   easeInBackFunc,
   easeInBounceFunc,
   easeInCircFunc,
+  easeInCubicFunc,
   easeInElasticFunc,
   easeInExpoFunc,
   easeInOutBackFunc,
   easeInOutBounceFunc,
   easeInOutCircFunc,
+  easeInOutCubicFunc,
   easeInOutElasticFunc,
   easeInOutExpoFunc,
+  easeInOutQuadFunc,
   easeInOutQuartFunc,
   easeInOutQuintFunc,
   easeInOutSineFunc,
   easeInQuadFunc,
+  easeInQuartFunc,
   easeInQuintFunc,
   easeInSineFunc,
   easeOutBackFunc,
   easeOutBounceFunc,
   easeOutCircFunc,
+  easeOutCubicFunc,
   easeOutElasticFunc,
   easeOutExpoFunc,
   easeOutQuadFunc,
+  easeOutQuartFunc,
   easeOutQuintFunc,
   easeOutSineFunc,
   linearFunc,
@@ -101,6 +107,30 @@ export const easeOutQuad: EasingHandler = (from, to, duration, hooks) => {
   easingHandlerProvider(easeOutQuadFunc, from, to, duration, hooks)
 }
 
+export const easeInOutQuad: EasingHandler = (from, to, duration, hooks) => {
+  easingHandlerProvider(easeInOutQuadFunc, from, to, duration, hooks)
+}
+
+export const easeInCubic: EasingHandler = (from, to, duration, hooks) => {
+  easingHandlerProvider(easeInCubicFunc, from, to, duration, hooks)
+}
+
+export const easeOutCubic: EasingHandler = (from, to, duration, hooks) => {
+  easingHandlerProvider(easeOutCubicFunc, from, to, duration, hooks)
+}
+
+export const easeInOutCubic: EasingHandler = (from, to, duration, hooks) => {
+  easingHandlerProvider(easeInOutCubicFunc, from, to, duration, hooks)
+}
+
+export const easeInQuart: EasingHandler = (from, to, duration, hooks) => {
+  easingHandlerProvider(easeInQuartFunc, from, to, duration, hooks)
+}
+
+export const easeOutQuart: EasingHandler = (from, to, duration, hooks) => {
+  easingHandlerProvider(easeOutQuartFunc, from, to, duration, hooks)
+}
+
 export const easeInOutQuart: EasingHandler = (from, to, duration, hooks) => {
   easingHandlerProvider(easeInOutQuartFunc, from, to, duration, hooks)
 }
@@ -165,12 +195,12 @@ export const easeInOutElastic: EasingHandler = (from, to, duration, hooks) => {
   easingHandlerProvider(easeInOutElasticFunc, from, to, duration, hooks)
 }
 
-export const easeOutBounce: EasingHandler = (from, to, duration, hooks) => {
-  easingHandlerProvider(easeOutBounceFunc, from, to, duration, hooks)
-}
-
 export const easeInBounce: EasingHandler = (from, to, duration, hooks) => {
   easingHandlerProvider(easeInBounceFunc, from, to, duration, hooks)
+}
+
+export const easeOutBounce: EasingHandler = (from, to, duration, hooks) => {
+  easingHandlerProvider(easeOutBounceFunc, from, to, duration, hooks)
 }
 
 export const easeInOutBounce: EasingHandler = (from, to, duration, hooks) => {
