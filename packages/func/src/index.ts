@@ -15,3 +15,13 @@ export function lock<T>(fn: () => Promise<T>) {
     return result
   }
 }
+
+export function once(fn: (...args: any[]) => void) {
+  let isExec = false
+  return (...args: any[]) => {
+    if (isExec)
+      return
+    isExec = true
+    fn(...args)
+  }
+}
