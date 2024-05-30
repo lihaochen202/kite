@@ -6,6 +6,10 @@ export function isNull(val: unknown): val is null {
   return val === null
 }
 
+export function isNil(val: unknown): val is null | undefined {
+  return val == null
+}
+
 export function isBoolean(val: unknown): val is boolean {
   return typeof val === 'boolean'
 }
