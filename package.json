@@ -1,7 +1,7 @@
 {
   "packageManager": "pnpm@9.1.1",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "build": "rimraf packages/*/dist && pnpm -r --filter=./packages/* run build",
     "stub": "pnpm -r --filter=./packages/* --parallel run stub",
